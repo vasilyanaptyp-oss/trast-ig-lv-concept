@@ -259,6 +259,9 @@ h1,h2,h3{margin:0; font-weight:800}
 @media (min-width:1024px){
   .works-grid{grid-template-columns:minmax(0,4fr) minmax(0,8fr)}
   .works-side{position:sticky; top:calc(var(--head) + 32px); align-self:start}
+  /* one photo sheet beside a taller list: the photo fills the frame instead of leaving an empty band above the caption */
+  .sheet--photo .sheet-img{flex:1 1 auto; min-height:360px}
+  .sheet--photo .sheet-img img{position:absolute; inset:0; height:100%; aspect-ratio:auto}
 }
 
 /* ============ О компании ============ */
@@ -563,7 +566,7 @@ h1,h2,h3{margin:0; font-weight:800}
       <div class="sheets">
         <figure class="sheet sheet--photo rv" id="lapa-1">
           <button class="sheet-img" type="button" data-lightbox data-i18n-attr="aria-label:sheet.open" aria-label="Открыть фото крупнее">
-            <img src="img/virtuve.jpg" width="1600" height="959" data-i18n-attr="alt:sheet1.alt" alt="Кухня: чёрные глянцевые нижние шкафы, светлые верхние шкафы, часть с матовым стеклом">
+            <img src="img/virtuve.jpg" width="1600" height="906" data-i18n-attr="alt:sheet1.alt" alt="Кухня: чёрные глянцевые нижние шкафы, светлые верхние шкафы, часть с матовым стеклом">
             <span class="zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></span>
           </button>
           <figcaption class="sheet-cap"><span class="n">01</span><span class="t" data-i18n="cat.1">Кухни</span></figcaption>
@@ -628,7 +631,7 @@ h1,h2,h3{margin:0; font-weight:800}
     <span data-i18n="lb.close">Закрыть</span>
     <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
   </button>
-  <img src="img/virtuve.jpg" width="1600" height="959" data-i18n-attr="alt:sheet1.alt" alt="Кухня: чёрные глянцевые нижние шкафы, светлые верхние шкафы, часть с матовым стеклом">
+  <img src="img/virtuve.jpg" width="1600" height="906" data-i18n-attr="alt:sheet1.alt" alt="Кухня: чёрные глянцевые нижние шкафы, светлые верхние шкафы, часть с матовым стеклом">
 </dialog>
 
 <script>
